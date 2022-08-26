@@ -25,7 +25,7 @@ resource "aws_kms_alias" "key-alias" {
 
 
 resource "aws_s3_bucket" "terraform-state" {
- bucket = "jlvdevopsbucketstate005"
+ bucket = "devopsbucketstate005"
  acl    = "private"
 
  versioning {
