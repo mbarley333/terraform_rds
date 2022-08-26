@@ -1,7 +1,6 @@
 # ------------------------------------------------------------------------------
 # security group constraining access to RDS instance
 # ------------------------------------------------------------------------------
-
 resource "aws_security_group" "rds" {
   vpc_id      = data.aws_vpc.devops.id
   name_prefix = var.project_name
@@ -30,8 +29,6 @@ resource "aws_db_subnet_group" "rds" {
 }
 
 resource "aws_db_instance" "rds" {
-  depends_on = [aws_db_subnet_group.rds]
-
   identifier_prefix           = var.project_name
   license_model               = var.rds_properties["license_model"]
   storage_type                = var.rds_properties["storage_type"]
