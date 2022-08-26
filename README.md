@@ -38,5 +38,5 @@ It takes a long time for RDS to deploy and show ready.  The terraform may time o
 
 
 ## Credit
-Thank you to @LeapBeyond for the excellent code that served as the basis for this project.  For a project the creates a new vpc and deploys aws rds sql server check out: https://github.com/LeapBeyond/terraform-aws-rds
+Thank you to @LeapBeyond for the excellent code that served as the basis for this project.  For a project that creates a new vpc and deploys aws rds sql server check out: https://github.com/LeapBeyond/terraform-aws-rds
 
